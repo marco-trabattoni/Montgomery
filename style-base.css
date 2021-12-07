@@ -469,12 +469,14 @@ footer {
 .video1 {
   text-align:center;
   clear: both;
-  width: 300pt;
+  width: 100%;
+  padding-left: 17pt;
+  padding-right: 17pt;
   margin-left: 0;
   margin-bottom: 60px;
   margin-top: 25vh;
   overflow: hidden;
-  max-width: 375px;
+  box-sizing: border-box;
 }
 
 footer {
