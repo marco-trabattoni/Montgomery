@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Merch | MONTGOMERY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style-base.css">
+<link rel="stylesheet" type="text/css" href="merch.css">
+
+<style>
+
+</style>
+</head>
+
+
+<body>
+  <div id="page-container">
+
+
+    <div id="content-wrap">
+
+
+
+      <div class="navbar">
+
+
+        <div class="hamburger" onclick="menufunction()">
+          <div class="bar">
+          </div>
+          <div class="bar">
+          </div>
+          <div class="bar">
+          </div>
+        </div>
+
+
+      <div class="mylinksX" id="mylinksX">
+
+      <div class="cross" onclick="menufunction()">
+        <div class="X">
+        </div>
+        <div class="XX">
+        </div>
+      </div>
+
+          <div class="dropdown">
+              <button type="button" class="dropbtn">ARTWORKS
+              </button>
+              <div class="dropdown-content">
+                <a href="EN_paintings.html">PAINTINGS</a>
+                <a href="EN_graphics.html">GRAPHICS</a>
+                <a href="EN_merch.html">MERCH</a>
+              </div>
+          </div>
+
+          <a href="EN_mood.html">MOOD</a>
+          <a href="EN_about.html">ABOUT</a>
+      </div>
+
+
+          <a href="index.html" class="right">MONTOGOMERY</a>
+      </div>
+
+
+  <div>
+    <select class="select-css" id="themeSelector" onchange="changeTheme(this.value)">
+
+      <option value="base"><div class="optionselection">Light</div></option>
+      <option value="alternate"><div class="optionselection">Dark</div></option>
+    </select>
+  </div>
+
+
+
+  <div id="overlay"></div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div>Change language
+          <div class="lingue">
+            <a href="index.html" style="text-decoration: underline;"><span>English</span></a>
+            <a href="IT_index.html"><span>Italiano</span></a>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+<p class="pagetitle">MERCH</p>
+
+  <div class="grid-container">
+
+      <div class="item">
+          <img class="image" src="MERCH/PETE.jpg" onmouseover="this.src='MERCH/retro.jpg'" onmouseout="this.src='MERCH/PETE.jpg'">
+      </div>
+      <div class="item">
+          <img class="image" src="MERCH/redtee.jpg" onmouseover="this.src='MERCH/redback.jpg'" onmouseout="this.src='MERCH/redtee.jpg'">
+      </div>
+      <div class="item">
+          <img class="image" src="MERCH/orangetee.jpg" onmouseover="this.src='MERCH/retro.jpg'" onmouseout="this.src='MERCH/orangetee.jpg'">
+      </div>
+      <div class="item">
+          <img class="image" src="MERCH/WMCJ.jpg" onmouseover="this.src='MERCH/retro.jpg'" onmouseout="this.src='MERCH/WMCJ.jpg'">
+      </div>
+
+
+
+      <div class="item">
+          <img class="image" src="MERCH/DTRT.jpg" onmouseover="this.src='MERCH/retro.jpg'" onmouseout="this.src='MERCH/DTRT.jpg'">
+      </div>
+      <div class="item">
+          <img class="image" src="MERCH/FIRE.jpg" onmouseover="this.src='MERCH/retro.jpg'" onmouseout="this.src='MERCH/FIRE.jpg'">
+      </div>
+      <div class="item">
+          <img src="MERCH/FRAGILE.jpg" class="image">
+      </div>
+      <div class="item">
+          <img src="MERCH/caution.jpg" class="image">
+      </div>
+
+
+
+      <div class="item">
+          <img class="image" src="MERCH/whiteFront.jpg" onmouseover="this.src='MERCH/Hendrixback.jpg'" onmouseout="this.src='MERCH/whiteFront.jpg'">
+      </div>
+      <div class="item">
+          <img src="MERCH/NYTcase.jpg" class="image">
+      </div>
+      <div class="item">
+          <img src="MERCH/LATcase.jpg" class="image">
+      </div>
+      <div class="item">
+          <img src="MERCH/YORKERcase.jpg" class="image">
+      </div>
+
+</div>
+
+
+
+</div>
+
+
+
+  <footer>
+      <p class="footertext">2020 MONTGOMERY</p>
+      <a href="mailto:acydstaff@gmail.com"><p class="footerlinksL">MAIL</p></a>
+      <a href="https://www.instagram.com/acyd____x/?hl=it" target="_blank"><p class="footerlinksL">INSTAGRAM</p></a>
+
+      <!-- Trigger/Open The Modal -->
+      <p class="myBtn">
+        <button id="myBtn">English (US)</button>
+      </p>
+
+
+  </footer>
+
+</div>
+
+  <script src="setup.js"></script>
+  <script src="language.js"></script>
+
+  <script>
+  function menufunction() {
+    var x = document.getElementById("mylinksX");
+
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      document.body.style.overflow = 'auto';
+
+    } else {
+      x.style.display = "block";
+      document.body.style.overflow = 'hidden';
+    }
+  }
+  </script>
+
+</body>
+</html>
