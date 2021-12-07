@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Citron | MONTGOMERY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" type="text/css" href="style-base.css">
+<link rel="stylesheet" type="text/css" href="singolarpaintings.css">
+
+
+
+</head>
+
+
+<body>
+<div id="page-container">
+  <div id="content-wrap">
+
+    <div class="navbar">
+
+
+      <div class="hamburger" onclick="menufunction()">
+        <div class="bar">
+        </div>
+        <div class="bar">
+        </div>
+        <div class="bar">
+        </div>
+      </div>
+
+
+  <div class="mylinksX" id="mylinksX">
+
+    <div class="cross" onclick="menufunction()">
+      <div class="X">
+      </div>
+      <div class="XX">
+      </div>
+    </div>
+
+        <div class="dropdown">
+            <button type="button" class="dropbtn">ARTWORKS
+            </button>
+            <div class="dropdown-content">
+              <a href="EN_paintings.html">PAINTINGS</a>
+              <a href="EN_graphics.html">GRAPHICS</a>
+              <a href="EN_merch.html">MERCH</a>
+            </div>
+        </div>
+
+        <a href="EN_mood.html">MOOD</a>
+        <a href="EN_about.html">ABOUT</a>
+  </div>
+
+
+        <a href="index.html" class="right">MONTOGOMERY</a>
+    </div>
+
+
+    <div>
+        <select class="select-css" id="themeSelector" onchange="changeTheme(this.value)" onchange="visibleselect">
+
+            <option value="base"><div>Light Mode</div></option>
+            <option value="alternate"><div>Dark Mode</div></option>
+        </select>
+    </div>
+
+
+  <div id="overlay"></div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div>Change language
+          <div class="lingue">
+                <a href="index.html" style="text-decoration: underline;"><span>English</span></a>
+                <a href="IT_index.html"><span>Italiano</span></a>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+
+<div class="quadrititlemobile">CITRON</div>
+
+
+<div class="CONTENITORE1">
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides">
+    <img src="QUADRI/citron.jpg">
+  </div>
+
+</div>
+
+
+</div>
+
+
+<div class="quadrititle">CITRON</div>
+<div class="description">The artist made several versions using different Polaroids, varying the framing, dimensions and colours. He used a palette of deep, aggressive tones (yellow, red, purple, green, blue) which he contrasted with a monochrome black background. Unlike his bust portraits, M does not reveal his neck or shoulders in these; only his face appears in close-up, occupying the entire canvas. He looks straight out, his disembodied face apparently floating like a death mask. M wears a wig of tousled, silver hair, nicknamed the “fright wig”</div>
+<br>
+<p class="clear"></p>
+
+
+
+</div>
+
+
+  <footer>
+      <p class="footertext">2020 MONTGOMERY</p>
+      <a href="mailto:acydstaff@gmail.com"><p class="footerlinksL">MAIL</p></a>
+      <a href="https://www.instagram.com/acyd____x/?hl=it" target="_blank"><p class="footerlinksL">INSTAGRAM</p></a>
+
+      <p class="myBtn">
+        <button id="myBtn">English (US)</button>
+      </p>
+
+  </footer>
+
+
+
+  </div>
+
+  <script src="language.js"></script>
+  <script src="setup.js"></script>
+  <script src="singolarpaintings.js"></script>
+
+  <script>
+  function menufunction() {
+    var x = document.getElementById("mylinksX");
+    var y = document.getElementById("themeSelector");
+
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "none";
+      document.body.style.overflow = 'auto';
+
+    } else {
+      x.style.display = "block";
+      y.style.display = "block";
+      document.body.style.overflow = 'hidden';
+    }
+  }
+  </script>
+
+  <script>
+  function visibleselect() {
+
+    var y = document.getElementById("themeSelector");
+    y.style.display = "block";
+
+  }
+  </script>
+
+
+</body>
+</html>
